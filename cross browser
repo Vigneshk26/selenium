@@ -1,0 +1,23 @@
+3. Write code for Cross Browser Testing?
+from selenium import webdriver
+
+# define a list of browsers to test
+browsers = ["chrome", "firefox", "safari"]
+
+# loop through each browser and open a new instance of it
+for browser in browsers:
+    if browser == "chrome":
+        driver = webdriver.Chrome()
+    elif browser == "firefox":
+        driver = webdriver.Firefox()
+    elif browser == "safari":
+        driver = webdriver.Safari()
+    
+    # navigate to the website to be tested
+    driver.get("http://www.example.com")
+    
+    # perform any required tests or interactions with the website
+    # ...
+    
+    # close the browser instance
+    driver.quit()
