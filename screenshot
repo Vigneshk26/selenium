@@ -1,0 +1,14 @@
+8. Write code for taking Screenshot/
+from selenium import webdriver
+
+# Create a new instance of the Chrome driver
+driver = webdriver.Chrome()
+
+# Navigate to the web page to be captured
+driver.get("http://www.example.com")
+
+# Save a screenshot of the web page to a file
+driver.save_screenshot("screenshot.png")
+
+# Close the browser
+driver.quit()
